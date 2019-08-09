@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Guessing Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class='game-container'>
+    <header>
+      <h2 class='game-heading'>Guessing Game</h2>
+    </header>
+    <section class='rating-box'>
+      <div class='ratings'>
+        <i class="fa fa-star checked"></i>
+        <i class="fa fa-star checked"></i>
+        <i class="fa fa-star checked"></i>
+      </div>
+      <button id='restartGame' class="reload">
+        <i class="fa fa-refresh"></i> 
+      </button>
+    </section>
+    <section class='score-section'>
+      <div class='score-text moves'>Moves : <span class="score-moves"> 0 </span></div>
+      <div class='score-text timer'><span class="score-timer"> 0 Hours 0 Minutes 0 Seconds</span></div>
+    </section>
+    <section class="memory-game">
+      <ul class="deck">
+        
+      </ul>
+    </section>
+  </div>
+  <section class="finished-game hide js-finished-game">
+    <div class="model-swing-animation box">
+      <h2>Congratulations, You have finished the Game.</h2>
+      <i class="fa close-icon fa-close js-close-icon"></i>
+      <div class='rating-final'>
+        <div class='ratings'>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+        </div>
+      </div>
+      <div class='score-box text'>
+        <span class='moves-text'>Moves: </span>
+        <span class='moves-text moves-text-value'>0</span>
+      </div> 
+
+      <div class="timer text">
+        <span class='moves-text timer-value'> 0 Hours 0 Minutes 0 Seconds</span>
+      </div>
+    </div>
+  </section>
+  <script src="js/index.js"></script>
+</body>
+</html>
